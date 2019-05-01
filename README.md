@@ -10,7 +10,7 @@ You should be able to just:
 
 ```
 npm install
-npm build
+npm run build
 ```
 
 ## and seeing if the build worked
