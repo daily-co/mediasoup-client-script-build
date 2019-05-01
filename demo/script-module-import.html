@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>mediasoup-client script import test</title>
+</head>
+<body>
+
+<div id="output">
+</div>
+
+<script type="module">
+  import Device from '../dist/mediasoup-client-esm.js';
+  console.log(Device);
+  const device = new Device();
+  console.log(device);
+  window.Device = Device;
+  window.device = device;
+
+  document.getElementById('output').innerHTML = JSON.stringify(device);
+</script>
+
+
+</body>
+</html>

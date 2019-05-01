@@ -1,0 +1,23 @@
+{
+  "name": "@dailyco/mediasoup-script-build",
+  "version": "0.1.1",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://mediasoup.org/",
+  "main": "dist/mediasoup-client.js",
+  "module": "dist/mediasoup-client-esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build-dev": "NODE_ENV=development rollup -c"
+  },
+  "dependencies": {
+    "mediasoup-client": "github:versatica/mediasoup-client",
+    "rollup": "^1.10.1",
+    "rollup-plugin-cjs-es": "^0.7.0",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}

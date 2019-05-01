@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>mediasoup-client script import test</title>
+</head>
+<script src="../dist/mediasoup-client.js"></script>
+<body>
+
+<div id="output">
+</div>
+
+<script>
+  const device = new MediasoupClientDevice();
+  console.log(device);
+  document.getElementById('output').innerHTML = JSON.stringify(device);
+</script>
+
+
+</body>
+</html>
